@@ -1,1 +1,22 @@
+# Per saperne di piu' su come ignorare files in Git
+# consultate questo link: http://help.github.com/ignore-files/ .
+
+# Dipendenze Node
 node_modules/
+
+# VSCode
+.vscode/
+
+# File di sistema
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+
+# Log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
