@@ -1,6 +1,11 @@
 const express = require('express');
+const helmet = require('helmet');
+const fraseDelGiorno = require('./frase-del-giorno');
 const app = express();
+
 const PORT = 3000;
+
+app.use(helmet());
 
 app.get('/', (req, res) => {
   res.status(201)
@@ -12,6 +17,11 @@ app.get('/status', (req, res) => {
     .send({
       messaggio: `JS.it API è in ascolto alla porta ${PORT}`
     });
+});
+
+app.get('/frase-del-giono', (req, res) => {
+  res.status(200)
+    .send(fraseDelGiorno());
 });
 
 app.listen(PORT, () => {
