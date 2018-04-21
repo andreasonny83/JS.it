@@ -8,9 +8,10 @@ const frasiDelGiorno = [
 
 const fraseDelGiorno = () => {
   const indice = Math.floor(Math.random() * 5);
-  console.log(indice);
 
-  return frasiDelGiorno[indice];
+  return {
+    messaggio: frasiDelGiorno[indice]
+  };
 };
 
 module.exports = fraseDelGiorno;

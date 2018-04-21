@@ -1,11 +1,13 @@
 const express = require('express');
 const helmet = require('helmet');
+const cors = require('cors');
 const fraseDelGiorno = require('./frase-del-giorno');
 const app = express();
 
 const PORT = 3000;
 
 app.use(helmet());
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.status(201)
@@ -19,7 +21,7 @@ app.get('/status', (req, res) => {
     });
 });
 
-app.get('/frase-del-giono', (req, res) => {
+app.get('/frase-del-giorno', (req, res) => {
   res.status(200)
     .send(fraseDelGiorno());
 });
