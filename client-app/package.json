@@ -1,0 +1,16 @@
+{
+  "name": "client-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel -p 4200 index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "node-sass": "^4.8.3",
+    "parcel-bundler": "^1.7.1"
+  }
+}
