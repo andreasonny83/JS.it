@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "parcel -p 4200 index.html"
+    "start": "parcel -p 4200 index.html",
+    "build": "rm -rf dist/ && parcel build index.html"
   },
   "author": "",
   "license": "ISC",
