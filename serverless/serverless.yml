@@ -1,0 +1,17 @@
+service: aws-nodejs # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+app: js-it
+tenant: andreasonny883
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          method: get
+          cors: true
+          path: ${self:service}/api/hello

@@ -3,6 +3,7 @@
 
 # Dipendenze Node
 node_modules/
+jspm_packages/
 
 # VSCode
 .vscode/
@@ -22,7 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 # Cache
-**/.cache/
+.cache/
 
 # Cartella di distribuzione
 **/dist/
+
+# Serverless directories
+.serverless
